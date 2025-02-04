@@ -1,0 +1,44 @@
+1. Intalacion nuve version: npm install --save-dev cypress
+
+2. npx cypress open
+Paginas para test
+https://validaciones.rodrigovillanueva.com.mx/
+https://testsheepnz.github.io/index.html#page-top
+https://automationexercise.com/
+https://demoqa.com/webtables   -> No funciona bien 
+https://computer-database.gatling.io/computers
+api: https://reqres.in/api/users?page=2
+https://testsheepnz.github.io
+https://demo.automationtesting.in/Register.html
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+
+Tablas:
+https://the-internet.herokuapp.com/tables
+
+
+
+
+COMANDOS POR CONSOLA: https://docs.cypress.io/app/references/command-line
+3. Corre los test por consola:
+npx cypress run 
+4. Corre los test en el navegador: 
+npx cypress run --headed 
+5. Indicar desde que navegador vamos a ejecutar:
+npx cypress run --browser chrome 
+6. Correr un test en particular:
+npx cypress run --spec "cypress\e2e\seccion 2\asserts.cy.js"
+7. Ejecutar suit completa:
+npx cypress run --spec "cypress\e2e\seccion 2\*"
+------------------
+8. Prueba de carga de archivos:
+Pluggin cypress-file-update (verificar si sigue estando activo):
+npm install --save-dev cypress-file-upload 
+import 'cypress-file-upload';
+
+9. Drag and drop (https://github.com/4teamwork/cypress-drag-drop)
+npm install --save-dev @4tw/cypress-drag-drop
+require('@4tw/cypress-drag-drop')
+page practice: https://commitquality.com/practice-drag-and-drop
+
+

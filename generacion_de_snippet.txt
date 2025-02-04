@@ -1,0 +1,55 @@
+Crear un archivo de texto dentro de tu proyecto para documentar cómo crear y usar el snippet es una buena idea. Aquí tienes un ejemplo de cómo podrías estructurar el archivo generacion_de_snippet.txt:
+
+
+# Generación y Uso de Snippet en Visual Studio Code
+
+## Paso 1: Crear el Snippet
+
+1. **Abrir Visual Studio Code**.
+2. **Ir a Fragmentos de Usuario**:
+   - Ve a `Archivo` > `Preferencias` > `Fragmentos de usuario`.
+3. **Seleccionar el archivo de fragmentos**:
+   - Selecciona el archivo de fragmentos para el lenguaje que estás utilizando (por ejemplo, `javascript.json`).
+
+4. **Agregar el Snippet**:
+   - Copia y pega el siguiente snippet en el archivo de fragmentos:
+
+```json
+{
+    "Cypress Test Template": {
+        "prefix": "c_plantilla",
+        "body": [
+            "/// <reference types=\"cypress\" />",
+            "",
+            "import 'cypress-file-upload'",
+            "require('cypress-xpath')",
+            "require('cypress-plugin-tab')",
+            "require('@4tw/cypress-drag-drop')",
+            "",
+            "describe(\"${1:Titulo}\", () => {",
+            "    it(\"${2:Test}\", () => {",
+            "        let tiempo = ${3:1000}",
+            "        cy.visit(\"${4:URL}\")",
+            "        cy.title().should('eq', '${5:titulo}')",
+            "        cy.wait(tiempo)",
+            "    })",
+            "})"
+        ],
+        "description": "Snippet para crear una plantilla de prueba de Cypress"
+    }
+}
+
+
+Guardar el archivo de fragmentos.
+
+------------------------------------------------
+Paso 2: Usar el Snippet
+Abrir un archivo JavaScript:
+
+Abre un archivo .js en Visual Studio Code donde quieras usar el snippet.
+Escribir el prefijo del snippet:
+
+Escribe c_plantilla y selecciona el snippet en las sugerencias de autocompletado (puedes presionar Enter o Tab para expandir el snippet).
+Personalizar el Snippet:
+
+Completa los valores de los marcadores de posición (${1:Titulo}, ${2:Test}, ${3:1000}, ${4:URL}, ${5:titulo}) según tus necesidades.

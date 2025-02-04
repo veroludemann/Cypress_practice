@@ -1,0 +1,53 @@
+<!-- Prueba para tablas: C:\Users\veron\Desktop\cypress_pract\cy_2022_rodrigo\cypress\e2e\seccion 3 - ejLocales\tabla.cy.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable Table</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <h2>Example Table</h2>
+    
+    <input type="text" id="search" placeholder="Search...">
+    
+    <table id="example" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>A. Cox</td><td>Junior Technical Author</td><td>San Francisco</td><td>66</td><td>Mon 12th Jan 09</td><td>$86,000/y</td></tr>
+            <tr><td>A. Ramos</td><td>Chief Executive Officer (CEO)</td><td>London</td><td>47</td><td>Fri 9th Oct 09</td><td>$1,200,000/y</td></tr>
+            <tr><td>A. Satou</td><td>Accountant</td><td>Tokyo</td><td>33</td><td>Fri 28th Nov 08</td><td>$162,700/y</td></tr>
+            <tr><td>B. Greer</td><td>Software Engineer</td><td>London</td><td>41</td><td>Sat 13th Oct 12</td><td>$132,000/y</td></tr>
+            <tr><td>B. Wagner</td><td>Software Engineer</td><td>San Francisco</td><td>28</td><td>Tue 7th Jun 11</td><td>$206,850/y</td></tr>
+            <tr><td>B. Williamson</td><td>Integration Specialist</td><td>New York</td><td>61</td><td>Sun 2nd Dec 12</td><td>$372,000/y</td></tr>
+            <tr><td>C. Hurst</td><td>Javascript Developer</td><td>San Francisco</td><td>39</td><td>Tue 15th Sep 09</td><td>$205,500/y</td></tr>
+            <tr><td>C. Kelly</td><td>Senior Javascript Developer</td><td>Edinburgh</td><td>22</td><td>Thu 29th Mar 12</td><td>$433,060/y</td></tr>
+            <tr><td>C. Marshall</td><td>Regional Director</td><td>San Francisco</td><td>36</td><td>Thu 16th Oct 08</td><td>$470,600/y</td></tr>
+            <tr><td>C. Vance</td><td>Pre-Sales Support</td><td>New York</td><td>21</td><td>Mon 12th Dec 11</td><td>$106,450/y</td></tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            let table = $('#example').DataTable();
+            
+            $('#search').on('keyup', function () {
+                table.search(this.value).draw();
+            });
+        });
+    </script>
+</body>
+</html>

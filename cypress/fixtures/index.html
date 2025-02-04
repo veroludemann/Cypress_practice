@@ -1,0 +1,50 @@
+<!-- index.html  -  Prueba checkboxes-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypress Checkbox and Radio Button Test</title>
+</head>
+<body>
+    <h1>Form with Checkboxes and Radio Buttons</h1>
+    <form id="test-form">
+        <fieldset>
+            <legend>Select your preferences:</legend>
+
+            <label for="newsletter">Subscribe to Newsletter</label>
+            <input type="checkbox" id="newsletter" name="subscription" value="newsletter"><br><br>
+
+            <label for="updates">Receive Updates</label>
+            <input type="checkbox" id="updates" name="subscription" value="updates"><br><br>
+
+            <label for="offers">Receive Special Offers</label>
+            <input type="checkbox" id="offers" name="subscription" value="offers"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your gender:</legend>
+
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male"><br><br>
+
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female"><br><br>
+
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other"><br><br>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Basic form submission handling for demonstration
+        document.getElementById('test-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>
