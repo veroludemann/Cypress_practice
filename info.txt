@@ -41,5 +41,10 @@ npm install --save-dev @4tw/cypress-drag-drop
 require('@4tw/cypress-drag-drop')
 page practice: https://commitquality.com/practice-drag-and-drop
 
-
-
+*************************Snippets********************************
+Snippets utilizados en este proyecto:
+- c_plantilla
+- c_hooks
+*************************CUSTOM COMANDS*************************
+https://docs.cypress.io/api/cypress-api/custom-commands
+ACA VAN A IR NUESTROS COMANDOS PERSONALIZADOS: cypress\support\commands.js
