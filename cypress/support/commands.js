@@ -109,7 +109,7 @@ Cypress.Commands.add('CompletarFormulario_V2', (usuario, clave, comentario, arch
 })
 
 // funcion para validar campos incorrectos
-Cypress.Commands.add('Validar_Campos', (selector, mens, nombre_campo, t) => {
+Cypress.Commands.add('Validar_Campos', (selector, mensError, nombre_campo, t) => {
     cy.wait(t); // Espera antes de validar el mensaje
 
     cy.get(selector).should('be.visible').then((val) => {
@@ -117,7 +117,7 @@ Cypress.Commands.add('Validar_Campos', (selector, mens, nombre_campo, t) => {
         cy.log("el valor de log es *************: " + dato)
         cy.log("Mensaje encontrado: " + dato);
 
-        expect(dato).to.equal(mens);
+        expect(dato).to.equal(mensError);
 
         cy.log(`✅ Validación exitosa: ${nombre_campo} muestra el mensaje correcto`);
     });

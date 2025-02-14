@@ -48,3 +48,6 @@ Snippets utilizados en este proyecto:
 *************************CUSTOM COMANDS*************************
 https://docs.cypress.io/api/cypress-api/custom-commands
 ACA VAN A IR NUESTROS COMANDOS PERSONALIZADOS: cypress\support\commands.js
+
+---------------------Page objects Models --------------------------
+https://www.cypress.io/blog/stop-using-page-objects-and-start-using-app-actions
