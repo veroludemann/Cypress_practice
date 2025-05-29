@@ -1,6 +1,7 @@
 class proyectoUno_po{
     visitHome(){
         let tiempo = 1000;
+        Cypress.config('defaultCommandTimeout', 15000); // Tiempo máximo de espera para comandos de Cypress
 
         before(() => {
             cy.log("Inicio de todo");
@@ -19,8 +20,10 @@ class proyectoUno_po{
 
         // Esperar una vez al principio
         cy.wait(tiempo);
+
         // Interacciones con los campos del formulario
         cy.get('#firstname').should('be.visible').type(nombre);
+        cy.screenshot("campo nombre");
         cy.get('#surname').should('be.visible').type(apellido);
         cy.get('#age').should('be.visible').type(edad);
         cy.get('#country').should('be.visible').type(pais);

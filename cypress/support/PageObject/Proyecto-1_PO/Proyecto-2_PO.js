@@ -16,7 +16,7 @@ class ProyectoDos_po {
         cy.get('.btnSubmit').should('be.visible').click();
 
         // Validaciones después del envío del formulario
-        
+    
 
 
     }

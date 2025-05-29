@@ -51,3 +51,21 @@ ACA VAN A IR NUESTROS COMANDOS PERSONALIZADOS: cypress\support\commands.js
 
 ---------------------Page objects Models --------------------------
 https://www.cypress.io/blog/stop-using-page-objects-and-start-using-app-actions
+
+
+---------------------------- screenshots-and-videos ----------------------------
+VIDEOS:
+https://docs.cypress.io/app/guides/screenshots-and-videos
+- Correr test por consola: 
+npx cypress run --spec "nombre archivo" (poner ruta completa ejemplo: 
+npx cypress run --spec "cypress/e2e/A-Seccion 8/Pageobjects_1.cy.js"
+)
+- Verificar que este habilitado en el archivo cypress.config.js
+
+SCREENSHOTS:
+Comando: cy.screenshot();
+nota: tener en cuenta los tiempos programados 
+
+ELEMENTOS CSS 
+*Buscar selectores xpath por la extension CSS and XPath checker
+asi v se deberia buscar: //button[@id='submit']   antes seleccionar xpath
