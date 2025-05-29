@@ -10,6 +10,9 @@ Crear un archivo de texto dentro de tu proyecto para documentar cómo crear y us
    - Ve a `Archivo` > `Preferencias` > `Fragmentos de usuario`.
 3. **Seleccionar el archivo de fragmentos**:
    - Selecciona el archivo de fragmentos para el lenguaje que estás utilizando (por ejemplo, `javascript.json`).
+   
+
+   
 
 4. **Agregar el Snippet**:
    - Copia y pega el siguiente snippet en el archivo de fragmentos:
@@ -46,10 +49,10 @@ Guardar el archivo de fragmentos.
 Paso 2: Usar el Snippet
 Abrir un archivo JavaScript:
 
-Abre un archivo .js en Visual Studio Code donde quieras usar el snippet.
+Abrir un archivo .js en Visual Studio Code donde quieras usar el snippet.
 Escribir el prefijo del snippet:
 
-Escribe c_plantilla y selecciona el snippet en las sugerencias de autocompletado (puedes presionar Enter o Tab para expandir el snippet).
+Escribir c_plantilla y selecciona el snippet en las sugerencias de autocompletado (puedes presionar Enter o Tab para expandir el snippet).
 Personalizar el Snippet:
 
-Completa los valores de los marcadores de posición (${1:Titulo}, ${2:Test}, ${3:1000}, ${4:URL}, ${5:titulo}) según tus necesidades.
+Completar los valores de los marcadores de posición (${1:Titulo}, ${2:Test}, ${3:1000}, ${4:URL}, ${5:titulo}) según tus necesidades.

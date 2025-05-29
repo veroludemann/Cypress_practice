@@ -21,3 +21,13 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // failing the test
     return false
 })
+
+// Cypress.Commands.add('silenciarLogs', () => {
+//     cy.intercept('GET', '**/users/me', { statusCode: 401 }).as('silenciarUsuario');
+//     cy.intercept('POST', '**/google-analytics.com/**', { statusCode: 204 }).as('silenciarAnalytics');
+// });
+
+//   // Llamar al comando antes de cada test
+//     beforeEach(() => {
+//         cy.silenciarLogs();
+// });
