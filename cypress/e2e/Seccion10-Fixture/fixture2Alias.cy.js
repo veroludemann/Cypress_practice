@@ -4,7 +4,7 @@ import 'cypress-file-upload';
 describe("Pruebas carga por Fixture con ALIAS ", () => {
 
     before(function(){
-        cy.fixture('ArchivosJson/datos.json').as("Datos_json") //el alias
+        cy.fixture('ArchivosJson/archivoObjeto.json').as("Datos_json") //el alias
     })
     it("Test 1 -> Cargando desde Json", () => {
         cy.visit("https://practicesoftwaretesting.com/contact")
