@@ -6,7 +6,7 @@ import 'cypress-file-upload';
 describe("Pruebas carga por Fixture con ALIAS ", () => {
     it("Test 1 -> Cargando desde Json", () => {
 
-        cy.fixture('ArchivosJson/dataExcelFormato.json').then(testData=>{
+        cy.fixture('ArchivosJson/datos.json').then(testData=>{
         testData.forEach(data => {
             const d_nombre=data.nombre
             const d_apellido=data.apellido

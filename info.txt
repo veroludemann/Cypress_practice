@@ -42,9 +42,13 @@ require('@4tw/cypress-drag-drop')
 page practice: https://commitquality.com/practice-drag-and-drop
 
 *************************Snippets********************************
+BUSCAR CON CTRL + SHIFT + P -> Preferences: Configure User Snippets
+
 Snippets utilizados en este proyecto:
 - c_plantilla
 - c_hooks
+- c_visible
+- c_
 *************************CUSTOM COMANDS*************************
 https://docs.cypress.io/api/cypress-api/custom-commands
 ACA VAN A IR NUESTROS COMANDOS PERSONALIZADOS: cypress\support\commands.js
@@ -69,3 +73,8 @@ nota: tener en cuenta los tiempos programados
 ELEMENTOS CSS 
 *Buscar selectores xpath por la extension CSS and XPath checker
 asi v se deberia buscar: //button[@id='submit']   antes seleccionar xpath
+
+CUCUMBER:
+https://docs.cypress.io/guides/tooling/cucumber
+https://cucumber.io/
+Configuracion que funciona: https://github.com/veroludemann/cucumber-cy
